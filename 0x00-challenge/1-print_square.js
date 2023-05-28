@@ -16,9 +16,10 @@ if (process.argv.length <= 2) {
 
 const size = parseInt(process.argv[2])
 
-for (let i = 0 ; i < size ; i ++) {
-    for (let j = 0 ; j < size ; j ++) {
-        process.stdout.write("#");
+for (let i = 0; i < size; i++) {
+    let row = "";
+    for (let j = 0; j < size; j++) {
+        row += "#";
     }
-    process.stdout.write("\n");
+    process.stdout.write(row + "\n");
 }
